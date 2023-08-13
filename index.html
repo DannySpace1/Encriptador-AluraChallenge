@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body >
+    <header>
+        <img class="logo" src="img/Logo_Alura.png" alt="logo de alura">
+        <p class="titulo">Encriptador</p>
+        <p>de </p>
+        <p>Texto</p>
+    </header>
+    <main>
+        <section class="contenedorIzq">
+            <textarea class="ingreso-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h4 class="advertencia"> &#9888;¡Advertencia! Solo se admite el uso de letras minusculas y sin asentos</h4>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor">
+            <div>
+                <div id="mostrar" style="display:none;">
+                    <textarea class="textareaoutput" rows="12"></textarea>
+                    <div>
+                        <button id="copiar" onclick="copiar()">Copiar</button>
+                    </div>
+                </div>
+                <div id="ocultar">
+                    <img src="img/Lupa.png" alt="Lupa">
+                    <p id="titulo">Nada por encriptar</p>
+                    <p id="subtitulo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="mi_nombre">López Arenas Daniel 2023</p>
+    </footer>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
